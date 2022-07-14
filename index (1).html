@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beat Box</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://rawgit.com/Jesus-E-Rodriguez/cityscapes-landing-page/master/css/styles.css">
+    <style>
+        /* If you wish to remove the astonish.js file, then also be sure to remove these styles. */
+        .astonish {
+            visibility: visible;
+        }
+
+        @media (min-width: 768px) {
+            .astonish {
+                visibility: hidden;
+            }
+
+            .animated {
+                visibility: visible;
+            }
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            /* Could be more or less, depending on screen size */
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .cards-list {
+            z-index: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            margin: 30px auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 40px;
+            box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        .card .card_image {
+            width: inherit;
+            height: inherit;
+            border-radius: 40px;
+        }
+
+        .card .card_image img {
+            width: inherit;
+            height: inherit;
+            border-radius: 40px;
+            object-fit: cover;
+        }
+
+        .card .card_title {
+            text-align: center;
+            border-radius: 0px 0px 40px 40px;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            margin-top: -80px;
+            height: 40px;
+        }
+
+        .card:hover {
+            transform: scale(0.9, 0.9);
+            box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+                -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+        }
+
+        .title-white {
+            color: white;
+        }
+
+        .title-black {
+            color: black;
+        }
+
+        @media all and (max-width: 500px) {
+            .card-list {
+                /* On small screens, we are no longer using row direction but column */
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main Navigation -->
+    <nav class="main-nav" id="main-nav">
+        <div class="content-wrapper-sm">
+            <a href="#" class="navbar-brand">Beat|Box</a>
+            <div id="menu-button">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#reserve">Games</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main header -->
+    <header>
+        <!-- First replaceble image -->
+        <img class="img-absolute"
+            src="https://raw.githubusercontent.com/Jesus-E-Rodriguez/cityscapes-landing-page/88c9b44e3def10ae253dd8d44b717cfa78cca42d/img/city.png"
+            alt="City 1">
+        <div class="wrapper astonish animated fadeInDown">
+            <h1><strong>Beat</strong>|Box</h1>
+            <h2>A place where new games added frequently
+                </strong>.</h2>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <div class="content-wrapper" id="about">
+            <!-- second replaceble image -->
+            <img class="img-absolute"
+                src="https://raw.githubusercontent.com/Jesus-E-Rodriguez/cityscapes-landing-page/master/img/city2.png"
+                alt="City 2">
+            <div class="grid">
+                <div class="grid-col-sm-12 grid-col-md-6 astonish" data-animation="fadeInLeft">
+                    <h2 class="section-title">About Beat|Box</h2>
+                    <p>Beatbox is a website designed for the gamers who want to play a peaceful, simple games and
+                        nostalgic games from 19's.</p>
+                    <p>The full version of this website is under construction and it comes with more games then this to
+                        provide a vast variety of options to play.</p>
+                    <p>Javascript is used to build the games and we are working with anime.js to enhance the user
+                        experience.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="reserve" class="content-wrapper-lg text-center astonish" data-animation="zoomIn">
+            <h2 class="section-title">Explore Beat|Box</h2>
+            <p>Beat|Box is great for anyone who want to play nostalgic games and we wishes to showcase our potentioal
+                with these games. Currently we have 3 games and other are in under construction. More games will be
+                available soon.</p>
+            <a id="myBtn" class="btn btn-outline-purple" target="_blank">Games</a>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="cards-list">
+
+                    <div class="card 1">
+                        <div class="card_image"><a href="file:///C:/Users/HP/Desktop/Game%20World/Beat%20Box/beat.html"><img
+                                    src="https://media.giphy.com/media/xTiTnETzih3HYCaw2Q/giphy.gif" /></a> </div>
+                        <div class="card_title title-white">
+                            <a href="#" style="text-decoration: none; color: white;">
+                                <p>Clickey</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card 3">
+                        <div class="card_image">
+                            <div class="card_image"><img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+                            </div>
+                        </div>
+                        <div class="card_title">
+                            <a href="file:///C:/Users/HP/Desktop/Game%20World/pig-game-main/pig-game-main/index.html" style="text-decoration: none; color: white;">
+                                <p>Pig-game</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card 4">
+                        <div class="card_image">
+                            <div class="card_image"><img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
+                            </div>
+                        </div>
+                        <div class="card_title title-black">
+                            <a href="file:///C:/Users/HP/Desktop/Game%20World/car%20game%202/Dash.github.io-main/index.html" style="text-decoration: none; color: black;">
+                                <p>Car Dash</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <!-- Main footer -->
+    <footer>
+        <div class="content-wrapper-sm display-flex-between" style="justify-content: center;">
+            <!-- Make sure to edit the links so that they go to your social media. -->
+            <div class="social-links">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-snapchat-square" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/Jesus-E-Rodriguez/cityscapes-landing-page/master/js/astonish.js"></script>
+    <script src="https://rawgit.com/Jesus-E-Rodriguez/cityscapes-landing-page/master/js/menu.js"></script>
+    <script src="https://rawgit.com/Jesus-E-Rodriguez/cityscapes-landing-page/master/js/nav.js"></script>
+    <script src="https://rawgit.com/Jesus-E-Rodriguez/cityscapes-landing-page/master/js/scroll.js"></script>
+</body>
+</html>

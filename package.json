@@ -1,0 +1,25 @@
+{
+  "name": "patatap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "beat.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gagan9336/thebeatbox.git"
+  },
+  "author": "gagan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gagan9336/thebeatbox/issues"
+  },
+  "homepage": "https://github.com/gagan9336/thebeatbox#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
